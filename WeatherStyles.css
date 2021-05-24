@@ -1,0 +1,108 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  border: 10px solid #03fcef6e;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  border-radius: 10%;
+  box-shadow: 5px 5px 5px 5px #c28247;
+  max-width: 900px;
+  max-height: 500px;
+  padding-top: 25px;
+}
+.search-form,
+.search-button,
+button {
+  border: 2px solid #9c55b8;
+  border-radius: 10px;
+  color: #4a8ead;
+  font-size: 18px;
+  padding: 5px 20px;
+}
+
+.search-form {
+  outline: 0;
+  right: 45px;
+}
+.search-button,
+button {
+  box-shadow: 5px 5px 5px #519bfc;
+  position: relative;
+  left: 251px;
+  bottom: 41px;
+}
+button {
+  left: 380px;
+  font-size: 16px;
+  bottom: 80px;
+}
+.search.button:hover {
+  background: #aebec5e8;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.current-city {
+  color: #0a0b52;
+  font-size: 16px;
+}
+h1 {
+  color: #0c0300bd;
+  font-size: 15px;
+  left: 50px;
+}
+
+.weather-report {
+  text-align: center;
+  display: block;
+  padding: 20px 0;
+}
+.temperature-today {
+  color: #e7b053;
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 0;
+}
+.temp-split {
+  font-size: 16px;
+  color: #1f1d1b;
+}
+
+.sunrise-sunset-times {
+  font-size: 15px;
+  padding: 30px 0;
+  text-align: right;
+  color: rgb(1, 1, 71);
+  display: block;
+}
+
+.weather-report-weekday {
+  color: #0a042c;
+  font-size: 12px;
+  font-weight: 700;
+}
+.weather-report-date {
+  color: #b88855;
+  font-size: 13px;
+}
+
+.icon-today {
+  color: #e0f806;
+  opacity: 80%;
+}
+.icon-forecast {
+  color: rgb(234, 253, 59);
+  font-size: 25px;
+  border: black;
+}
+.daily-high,
+.daily-low {
+  color: #b66f06;
+  font-size: 16px;
+  font-weight: 500;
+}
+.daily-wind {
+  color: #049b6e;
+  font-size: 16px;
+}
