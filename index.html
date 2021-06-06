@@ -20,46 +20,53 @@
   <body>
     
     <div class="container">
-      <form id="search-bar">
-        <div class="row">
-            <div class="col-2">
-              <input
-                type="text"
-                placeholder="Enter your city here"
-                autocomplete="off"
-                id= "city-input"
-              />
+        <div class="=weather-app-wrapper">
+            <div class="weather-app">
+              <form id="search-bar" class="mb-3">
+                <div class="row">
+                  <div class="col-9">
+                    <input
+                      type="text"
+                      placeholder="Enter your city here"
+                      autocomplete="off"
+                      id= "city-input"
+                      aria-autocomplete="off"
+                    />
+                  </div>
+                <div class="col-3">
               <input type="submit" value="Search 🔎" class="search-button" />
-              <button id="current-location">Location?</button>
+              <button id="current-location">🧭</button>
             </div>
-          </form>
-      <div class="row">
-        <div class="col-6">
-          <header>
-            <h1 class="current-city" id="searchedCity">
-            Riverside, CA <i class="fas fa-location-arrow"></i></h1>
-         </header>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div id="temperature-today">
-            <span class="daily-high"></span>Hi 20° </span>
-            <span class="temp-units">
-              <a href="#" id="celsius-link"> °C </a> |
-              <a href="#" id="fahrenheit-link"> °F </a>
-            </span>
-            <span class="temp-split">/</span>
-            <span class="daily-low"> 50</span><br>
-            <span class="daily-wind">SW 8mph</span>
-            <span class="icon-today">
-              <i class="fas fa-sun"></i>
-            </span>
+        </form>
+      <div class="overview">
+            <h1 class="current-city" id="searchedCity"> Riverside
+                </h1>
+                <ul>
+                    <li>Last updated: <span id="date"> </span></li>
+                    <li id="description"></li>
+                </ul>
+            </div>
           </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left"/>
+                    <strong id="temperature-today"></strong>
+                    <span class="temp-units">
+                    <a href="#" id="celsius-link"> °C </a> |
+                    <a href="#" id="fahrenheit-link"> °F </a>
+                    </span> 
+                   </span>
+                </div>
+             </div>
+           </div>
+         </div>
+        <div class="col-6">
+            <ul class="weather-list">
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>m/ph</li>
+            </ul>
         </div>
-      </div>
-    </div>
-        <div class="col-9">
           <div class="sunrise-sunset-times">
             <h3 class="today's date">now</h3>
             <div class="sunrise">Sunrise 6:10AM</div>
@@ -126,8 +133,8 @@
           </div>
         </div>
       </div>
-      <p><a href="https://github.com/AzenathN/WeatherAppVS.git" target="_blank"> Open source code</a> by Azenath Tovar🎶</p> 
+      <small><a href="https://github.com/AzenathN/WeatherAppVS.git" target="_blank"> Open source code</a> by Azenath Tovar🎶</small> 
     <script src="src/weather.js"></script>
   </body>
-  <p>hosted by <a href="http://www.netlify.com">Netlify</a></p>  
+  <small>hosted by <a href="http://www.netlify.com">Netlify</a></small>  
 </html>

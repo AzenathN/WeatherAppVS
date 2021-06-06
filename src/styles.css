@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -10,7 +10,13 @@ body {
   max-width: 900px;
   max-height: 500px;
   padding-top: 25px;
+  margin: 30px auto;
 }
+.weather-app-wrapper{
+  max-width: 600px;
+  margin: 30px auto;
+}
+
 .search-form,
 .search-button,
 button {
@@ -29,15 +35,14 @@ button {
 button {
   box-shadow: 5px 5px 5px #519bfc;
   position: relative;
-  left: 251px;
-  bottom: 41px;
+  right: 425px;
+  bottom: 5px;
 }
 button {
-  left: 380px;
-  font-size: 16px;
-  bottom: 80px;
+  right: 285px;
+  bottom: 45px;
 }
-.search.button:hover {
+.search-button:hover, button:hover {
   background: #aebec5e8;
   cursor: pointer;
   transition: all 200ms ease-in-out;
@@ -47,12 +52,59 @@ button {
   color: #0a0b52;
   font-size: 16px;
 }
+
 h1 {
   color: #0c0300bd;
-  font-size: 15px;
-  left: 50px;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 0;
 }
 
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: rgb(135,135,135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+li:first-letter{
+  text-transform: capitalize;
+}
+
+
+.weather-app{
+  padding: 20px;
+  border: 1px solid #9c55b8;
+}
+.overview{
+  margin-bottom: 20px;
+}
+.weather-temperature{
+  color: #e7b053;
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 0;
+  }
+
+.weather-temperature img{
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+  }
+.weather-temperature strong{
+  color:rgb(33,33,33);
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 300;
+}
 .weather-report {
   text-align: center;
   display: block;
@@ -75,6 +127,7 @@ h1 {
   text-align: right;
   color: rgb(1, 1, 71);
   display: block;
+  position: top;
 }
 
 .weather-report-weekday {
@@ -88,7 +141,7 @@ h1 {
 }
 
 .icon-today {
-  color: #e0f806;
+  color: #f5d521;
   opacity: 80%;
 }
 .icon-forecast {
@@ -102,7 +155,4 @@ h1 {
   font-size: 16px;
   font-weight: 500;
 }
-.daily-wind {
-  color: #049b6e;
-  font-size: 16px;
-}
+
