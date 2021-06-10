@@ -88,7 +88,7 @@ li:first-letter{
   margin-bottom: 20px;
 }
 .weather-temperature{
-  color: #e7b053;
+  color: #6199b3;
   font-size: 25px;
   font-weight: 500;
   padding-top: 0;
@@ -104,6 +104,26 @@ li:first-letter{
   font-size: 60px;
   line-height: 1;
   font-weight: 300;
+}
+.weather-temperature .temp-units{
+position: relative;
+font-size: 16px;
+top: -34px;
+}
+.weather-forcast{
+  margin-top: 20px;
+  text-align: center;
+  color:#000;
+}
+.weather-forcast-date{
+  font-size: 16px;
+  opacity: 0.5;
+}
+.weather-forcast-temperature-min{
+  opacity: 0.5;
+}
+.weather-forcast-temperature{
+  font-size: 13px;
 }
 .weather-report {
   text-align: center;
@@ -121,14 +141,14 @@ li:first-letter{
   color: #1f1d1b;
 }
 
-.sunrise-sunset-times {
+/*.sunrise-sunset-times {
   font-size: 15px;
   padding: 30px 0;
   text-align: right;
   color: rgb(1, 1, 71);
   display: block;
   position: top;
-}
+}*/
 
 .weather-report-weekday {
   color: #0a042c;
@@ -140,10 +160,6 @@ li:first-letter{
   font-size: 13px;
 }
 
-.icon-today {
-  color: #f5d521;
-  opacity: 80%;
-}
 .icon-forecast {
   color: rgb(234, 253, 59);
   font-size: 25px;
