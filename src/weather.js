@@ -11,7 +11,7 @@ let days = [
   "Sunday"
 ];
 
-let day = days[now.getDay()];
+
 let minute = now.getMinutes();
 if (minute < 10) {
   minute = `0${minute}`;
@@ -23,6 +23,7 @@ if (hour < 10) {
 if(hour>12){
   hour=hour-12;
 }
+let day = days[now.getDay()];
 return `${day} ${hour}:${minute}`;
 }
 
