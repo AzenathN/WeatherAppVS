@@ -151,7 +151,7 @@ function showFahrenheit(event) {
   let temperatureToday = document.querySelector("#temperature-today");
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("#active");
-  let fahrenheitTemperature=(celsiusTemperature*9)/5+32;
+  let fahrenheitTemperature=(celsiusTemperature*(9/5))+32;
   temperatureToday.innerHTML = Math.round(fahrenheitTemperature);
 }
 
