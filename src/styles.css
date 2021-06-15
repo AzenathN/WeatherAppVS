@@ -25,6 +25,7 @@ button {
   color: #4a8ead;
   font-size: 18px;
   padding: 5px 20px;
+  max-width: fit-content;
 }
 
 .search-form {
@@ -120,7 +121,8 @@ top: -34px;
   opacity: 0.5;
 }
 .weather-forcast-temperature-min{
-  opacity: 0.5;
+  opacity: 10%;
+  color: gray;
 }
 .weather-forcast-temperature{
   font-size: 13px;
@@ -136,7 +138,9 @@ top: -34px;
   font-weight: 500;
   padding-top: 0;
 }
-.temp-split {
+
+
+/*.temp-split {
   font-size: 16px;
   color: #1f1d1b;
 }
